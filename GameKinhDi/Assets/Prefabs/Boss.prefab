@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8844986528457344431}
   - component: {fileID: 1968694248975359435}
   - component: {fileID: 2493975758626629116}
-  - component: {fileID: 2999125434008723916}
   - component: {fileID: 8340103172614810603}
   - component: {fileID: 61691262539221430}
   - component: {fileID: 4700022329124872599}
@@ -36,6 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3673552431010227048}
+  - {fileID: 7926669830128255181}
   m_Father: {fileID: 5711838342974622950}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1968694248975359435
@@ -117,41 +117,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &2999125434008723916
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1918753169935301069}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.41862583, y: -7.1486707}
-  serializedVersion: 2
-  m_Radius: 0.98526525
 --- !u!95 &8340103172614810603
 Animator:
   serializedVersion: 5
@@ -236,6 +201,9 @@ MonoBehaviour:
   - {fileID: 6518090778377104639}
   - {fileID: 2981087176887119486}
   - {fileID: 1042031852843328029}
+  delay: 0
+  menu: {fileID: 0}
+  distance: 0
 --- !u!1 &4235507279482497443
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,6 +235,73 @@ Transform:
   m_Children: []
   m_Father: {fileID: 403793071133336020}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5091591374138852798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7926669830128255181}
+  - component: {fileID: 8280292654269142400}
+  m_Layer: 6
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7926669830128255181
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091591374138852798}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8844986528457344431}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!58 &8280292654269142400
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5091591374138852798}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 1.6414318, y: -7.0264816}
+  serializedVersion: 2
+  m_Radius: 0.98954964
 --- !u!1 &5384559270495126584
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +327,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5384559270495126584}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.8325343, w: 0.55397356}
+  m_LocalRotation: {x: -0, y: -0, z: 0.8164092, w: 0.57747394}
   m_LocalPosition: {x: -1.84, y: 4.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -338,7 +373,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 51.63
   m_PointLightOuterAngle: 51.63
   m_PointLightInnerRadius: 0
-  m_PointLightOuterRadius: 11.345327
+  m_PointLightOuterRadius: 15.250594
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1

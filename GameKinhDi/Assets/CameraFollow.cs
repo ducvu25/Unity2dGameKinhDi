@@ -7,7 +7,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] GameObject player;
     Vector3 offset;
     [SerializeField] float delay;
-    //public float max_y, min_y, max_x, min_x;
+    public float  max_x, min_x;
 
     // Start is called before the first frame update
     void Start()
@@ -22,13 +22,10 @@ public class CameraFollow : MonoBehaviour
         // vt ban dau, vt di chuyen, delay
         transform.position = Vector3.Lerp(transform.position, cameraPlayer, delay * Time.deltaTime);  // caajo nhật vị trí
         // kiểm tra vùng giới hạn
-        /*if (transform.position.y < min_y) // quá thấp thì sẽ để mặc dịnh ở min_y
-            transform.position = new Vector3(transform.position.x, min_y, transform.position.z);
-        else if (transform.position.y > max_y)
-            transform.position = new Vector3(transform.position.x, max_y, transform.position.z);
+   
         if (transform.position.x < min_x)
             transform.position = new Vector3(min_x, transform.position.y, transform.position.z);
         else if (transform.position.x > max_x)
-            transform.position = new Vector3(max_x, transform.position.y, transform.position.z);*/
+            transform.position = new Vector3(max_x, transform.position.y, transform.position.z);
     }
 }
