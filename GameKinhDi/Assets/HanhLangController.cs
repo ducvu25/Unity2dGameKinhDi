@@ -72,13 +72,15 @@ public class HanhLangController : MonoBehaviour
     }
     void NextMap()
     {
-        SettingController.INDEX_BOSS = Mathf.Abs((SettingController.lv + 2));
+        SettingController.INDEX_BOSS = 1;
         SettingController.lv++;
-        if(SettingController.lv == 3 && SettingController.item[2] == 1 && SettingController.item[3] == 1 && SettingController.item[4] == 1 && SettingController.item[5] == 1)
+        SettingController.item[1] = 0;
+        if (SettingController.lv == 3 && SettingController.item[2] == 1 && SettingController.item[3] == 1 && SettingController.item[4] == 1 && SettingController.item[5] == 1)
         {
             SceneManager.LoadScene(SettingController.SCENE_END);
         }
-        SettingController.item[1] = 0;
+        else
+            SceneManager.LoadScene(SettingController.SCENE_HANH_LANG[SettingController.lv]);
     }
 
     public void Pause()

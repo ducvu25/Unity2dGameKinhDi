@@ -12,7 +12,7 @@ public class NganKeoController : MonoBehaviour
     private void Start()
     {
         panel.SetActive(false);
-        if(SettingController.lv == 2)
+        if(SettingController.lv == 1)
         {
             lItems[2].gameObject.SetActive(false);
             lItems[3].gameObject.SetActive(false);
@@ -22,6 +22,9 @@ public class NganKeoController : MonoBehaviour
             lItems[0].gameObject.SetActive(false);
             lItems[1].gameObject.SetActive(false);
         }
+        for(int i=0; i<4; i++)
+            if (SettingController.item[i + 2] == 1)
+                lItems[i].gameObject.SetActive(false);
     }
     public void RaNgoai()
     {
@@ -34,7 +37,7 @@ public class NganKeoController : MonoBehaviour
     }
     void RaNgoai2()
     {
-        SceneManager.LoadScene(SettingController.SCENE_TRONG_GV[SettingController.lv - 1]);
+        SceneManager.LoadScene(SettingController.SCENE_TRONG_GV[SettingController.lv]);
     }
     public void NhatItem(int i)
     {

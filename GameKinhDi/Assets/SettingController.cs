@@ -19,7 +19,7 @@ public static class SettingController
     public static Vector3[] INDEX_PLAYER_TRONG_GV = { new Vector3(-79.7871f, -7.14f, 0), new Vector3(-79.7871f, -7.14f, 0), new Vector3(-79.7871f, -7.14f, 0) };
     public static Vector3[] INDEX_PLAYER_TRONG_WC = { new Vector3(-114.2f, -6.9f, 0), new Vector3(-114.2f, -6.9f, 0), new Vector3(-114.2f, -6.9f, 0) };
     public static int[] item = { 0, -1, 0, 0, 0, 0};
-    public static int lv = 0;
+    public static int lv = 2;
     public static void SetIndexPlayer(int index, Vector3 player)
     {
         switch (index)

@@ -88,19 +88,15 @@ public class BossController : MonoBehaviour
     {
         if(collision.CompareTag("Player")) {
             AdioController.instance.Play(1);
-            if(Mathf.Abs(collision.gameObject.transform.position.x - transform.position.x) > distance && delay_s < 0)
-            {
-                delay_s = delay;
-                speed *= 2;
-            }
-            if(Mathf.Abs(collision.gameObject.transform.position.x - transform.position.x) <= distance && !menu.activeSelf)
-            {
-                menu.SetActive(true);
-                //Invoke("Pause", 0.2f);
-            }
         }
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            menu.SetActive(true);
+        }
+    }
     public void Pause()
     {
         Time.timeScale = 1;
