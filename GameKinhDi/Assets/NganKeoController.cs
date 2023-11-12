@@ -34,7 +34,7 @@ public class NganKeoController : MonoBehaviour
     }
     void RaNgoai2()
     {
-        SceneManager.LoadScene(SettingController.SCENE_TRONG_GV[1]);
+        SceneManager.LoadScene(SettingController.SCENE_TRONG_GV[SettingController.lv - 1]);
     }
     public void NhatItem(int i)
     {
