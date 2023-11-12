@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lv3/Hanh_Lang_3.unity
     guid: 1818b4db65debf647828a435f6802b8b
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: 91b5dde2dbeb9e3419c163ad3f35ca6f
   m_configObjects: {}

@@ -8,9 +8,20 @@ public class NganKeoController : MonoBehaviour
 {
     public GameObject panel;
     public Sprite []items;
+    public GameObject[] lItems;
     private void Start()
     {
         panel.SetActive(false);
+        if(SettingController.lv == 2)
+        {
+            lItems[2].gameObject.SetActive(false);
+            lItems[3].gameObject.SetActive(false);
+        }
+        else
+        {
+            lItems[0].gameObject.SetActive(false);
+            lItems[1].gameObject.SetActive(false);
+        }
     }
     public void RaNgoai()
     {

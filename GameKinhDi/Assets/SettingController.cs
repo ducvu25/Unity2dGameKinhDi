@@ -9,6 +9,7 @@ public static class SettingController
     public static string []SCENE_VAO_PHONGWC = { "Nha_WC_1", "Nha_WC_2", "Nha_WC_3" };
     public static string []SCENE_TRONG_GV = { "Ngan_Keo", "Phong GV_2", "Phong GV_3" };
     public static string SCENE_MENU = "Menu";
+    public static string SCENE_END = "End";
     public static string TAG_PLAYER = "Player";
     public static string KEY_PHANDIEN_2 = "TANG_2";
     public static string KEY_CAMERA_2 = "CAMERA_2";
@@ -17,7 +18,7 @@ public static class SettingController
     public static Vector3[] INDEX_PLAYER_TRONG_LOP = { new Vector3(-79.7871f, -7.768655f, 0), new Vector3(-79.7871f, -7.768655f, 0), new Vector3(-75.4f, -7.768655f, 0) };
     public static Vector3[] INDEX_PLAYER_TRONG_GV = { new Vector3(-79.7871f, -7.14f, 0), new Vector3(-79.7871f, -7.14f, 0), new Vector3(-79.7871f, -7.14f, 0) };
     public static Vector3[] INDEX_PLAYER_TRONG_WC = { new Vector3(-114.2f, -6.9f, 0), new Vector3(-114.2f, -6.9f, 0), new Vector3(-114.2f, -6.9f, 0) };
-    public static int[] item = { 0, -1, 0, 0};
+    public static int[] item = { 0, -1, 0, 0, 0, 0};
     public static int lv = 0;
     public static void SetIndexPlayer(int index, Vector3 player)
     {
@@ -53,6 +54,8 @@ public static class SettingController
         item[1] = 0;
         item[2] = 0;
         item[3] = 0;
+        item[4] = 0;
+        item[5] = 0;    
         Time.timeScale = 1;
         lv = 0;
     }
